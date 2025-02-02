@@ -1,0 +1,101 @@
+/* Import the 'Press Start 2P' font, which gives a pixelated, retro look */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Style the entire body of the page */
+body {
+    font-family: 'Press Start 2P', cursive; /* Use our retro font */
+    background-color: #000; /* Black background for that classic arcade feel */
+    color: #fff; /* White text for contrast */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Hide any overflow */
+}
+
+/* Style the container that holds the game elements */
+.game-container {
+    background-color: #000; /* Black background */
+    border: 4px solid #39ff14; /* Bright green border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px #39ff14; /* Glowing effect */
+    padding: 20px; /* Space inside the container */
+    text-align: center; /* Center the content */
+}
+
+/* Style the game title */
+.game-title {
+    font-size: 24px; /* Large text */
+    color: #ff00ff; /* Bright pink color */
+    text-shadow: 2px 2px #00ffff; /* Cyan shadow for contrast */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Style the game canvas */
+canvas {
+    border: 4px solid #39ff14; /* Bright green border */
+    border-radius: 5px; /* Slightly rounded corners */
+    image-rendering: pixelated; /* Make graphics look more pixelated */
+}
+
+/* Style the block count display */
+#count {
+    font-size: 16px; /* Readable size */
+    margin: 20px 0; /* Space above and below */
+    color: #ffff00; /* Bright yellow color */
+}
+
+/* Style the reset button */
+#delete {
+    background-color: #ff00ff; /* Bright pink background */
+    border: none; /* No border */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Space inside the button */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Allow setting dimensions */
+    font-size: 16px; /* Readable size */
+    margin: 4px 2px; /* Small margin */
+    cursor: pointer; /* Hand cursor on hover */
+    font-family: 'Press Start 2P', cursive; /* Same retro font */
+    text-transform: uppercase; /* All caps for retro feel */
+    transition: all 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Style the reset button on hover */
+#delete:hover {
+    background-color: #00ffff; /* Change to cyan on hover */
+    color: #000; /* Black text for contrast */
+    box-shadow: 0 0 10px #00ffff; /* Glowing effect */
+}
+
+
+
+
+/* Apply the flickering animation to the game container */
+.game-container {
+    animation: flicker 0.1s infinite; /* Rapid, infinite flicker */
+}
+#right, #left {
+    background-color: #ff00ff; /* Bright pink background */
+    border: none; /* No border */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Space inside the button */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Allow setting dimensions */
+    font-size: 16px; /* Readable size */
+    margin: 4px 2px; /* Small margin */
+    cursor: pointer; /* Hand cursor on hover */
+    font-family: 'Press Start 2P', cursive; /* Same retro font */
+    text-transform: uppercase; /* All caps for retro feel */
+    transition: all 0.3s; /* Smooth transition for hover effect */
+    font-size: 20px;
+}
+
+/* Hover effect for right and left buttons */
+#right:hover, #left:hover {
+    background-color: #00ffff; /* Cyan on hover */
+    color: #000;
+    box-shadow: 0 0 10px #00ffff; /* Glowing effect */}

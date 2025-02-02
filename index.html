@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
 </head>
 <body>
-    <canvas width="600" height="800" id="myCanvas"></canvas>
+    <div class="game-container">
+        <h1 class="game-title">RETRO ODDYSEY</h1>
+        <canvas id="myCanvas" width="600" height="800"></canvas>
+        <p id="count">BLOCKS DESTROYED: 0</p>
+        <button id="delete">RESET COUNT</button>
+        <button id="left">←</button>
+        <button id="right">→</button>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
