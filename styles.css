@@ -12,6 +12,7 @@ body {
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default margin */
     overflow: hidden; /* Hide any overflow */
+    flex-direction: column
 }
 
 /* Style the container that holds the game elements */
